@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqsa Mobile-Shop/Homepage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #081b29;
+            color: white;
+            width: 100%;
+        }
+
+        .header {
+            width: 100%;
+            padding: 20px 10%;
+            margin-bottom: 10px;
+        }
+
+        .header .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .Main-Name-txt {
+            color: #00abf0;
+            font-family: Poppins;
+            font-size: 28px;
+            font-weight: 600;
+            word-spacing: 7px;
+            filter: drop-shadow(2px 4px 8px black);
+        }
+
+        .navbar .navbar-list {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+
+        }
+
+        .navbar-list-link {
+            text-decoration: none;
+            font-size: 21px;
+            font-family: Poppins;
+            color: white;
+            filter: drop-shadow(0px 5px 5px black);
+        }
+
+        .navbar-list-link:hover,
+        .navbar-list a.HOME {
+            color: #00abf0;
+        }
+
+        .highlight {
+            border: 3px solid red;
+            background-color: yellow;
+            transition: 0.5s ease;
+        }
+
+        .section-1 {
+            max-width: 90vw;
+            min-height: 60vh;
+            margin: 0 auto;
+            padding-bottom: 60px;
+        }
+
+        .section-1 .introduction {
+            max-width: 72vw;
+            padding: 23px 0 0 98px;
+        }
+
+        .intr-heading {
+            font-size: 28px;
+            font-weight: 100;
+            color: #6fdfff;
+        }
+
+        .intr-highlight {
+            font-size: 42px;
+            font-weight: 600;
+            font-family: sans-serif;
+            color: #00abf0;
+            padding-left: 6px;
+        }
+
+        .intr-desc {
+            padding-top: 25px;
+            color: #d4f3ff;
+            font-size: 20px;
+            max-width: 33vw;
+        }
+
+        footer {
+            background-color: #05121e;
+            color: white;
+            padding: 30px 5vw;
+        }
+
+        #about,
+        #contact {
+            max-width: 90vw;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        #about h1,
+        #contact h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #00a4e6;
+        }
+
+        .about-heading,
+        .about-para {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-list li {
+            margin: 5px 0;
+        }
+
+        .contact-list a {
+            color: #00a4e6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-list a:hover {
+            text-decoration: underline;
+        }
+
+        .disclaimer {
+            margin-top: 20px;
+            font-size: 13px;
+            padding-top: 20px;
+        }
+        @media all and (max-width:810px){
+            .header{
+                padding: 20px 10%;
+            }
+            .navbar .Main-Name-txt{
+                font-size: 27px;
+                word-spacing: 2px;
+            }
+            .navbar .navbar-list{
+                gap: 25px;
+            }
+            .navbar-list-link{
+                font-size: 20px;
+            }
+            .section-1 .introduction{
+                padding: 23px 0 0 70px;
+            }
+            .intr-heading{
+                font-size: 22px;
+            }
+            .intr-highlight{
+                font-size: 30px;
+                padding-left: 4px;
+            }
+            .intr-desc{
+                max-width: 44vw;
+                font-size: 17px;
+            }
+            #about h1, #contact h1{
+                font-size: 23px;
+            }
+            footer #about h3{
+                font-size: 18px;
+            }
+            .about-heading, .about-para{
+                font-size: 15px;
+            }
+            footer #contact h2{
+                font-size: 18px;
+            }
+            footer #contact .contact-list li{
+                font-size: 16px;
+            }
+            .disclaimer{
+                font-size: 14px;
+            }
+            .disclaimer h2{
+                font-size: 17px;
+            }
+        }
+        @media all and (max-width: 656px) {
+            .header{
+                padding: 20px 0%;
+            }
+            .header .navbar{
+                justify-content: space-around;
+            }
+            .navbar .Main-Name-txt{
+                font-size: 22px
+            }
+            .navbar .navbar-list{
+                gap: 20px;
+            }
+            .navbar-list-link{
+                font-size: 18px;
+            }
+            .section-1 .introduction{
+                max-width: 85vw;
+                padding: 23px 0 0 50px;
+            }
+            .intr-heading{
+                font-size: 21px;
+            }
+            .intr-highlight{
+                font-size: 28px;
+            }
+            .intr-desc{
+                max-width: 48vw;
+            }
+            #about h1, #contact h1{
+                font-size: 22px
+            }
+            footer #about h3{
+                font-size: 17px;
+            }
+            footer #contact h2{
+                font-size: 16px;
+            }
+            .disclaimer h2{
+                font-size: 15px;
+            }
+        }
+        @media all and (max-width:524px) {
+            .header{
+                padding: 20px 0%;
+            }
+            .navbar .Main-Name-txt{
+                font-size: 22px;
+            }
+            .navbar .navbar-list{
+                gap: 15px;
+            }
+            .navbar-list-link{
+                font-size: 18px;
+            }
+            .section-1 .introduction{
+                padding: 23px 0 0 40px;
+            }
+            .intr-heading{
+                font-size: 20px;
+            }
+            .intr-highlight{
+                font-size: 22px;
+            }
+            .intr-desc{
+                max-width: 58vw;
+                font-size: 17px
+            }
+            #about h1, #contact h1{
+                font-size: 18px
+            }
+            footer #about h3{
+                font-size: 14px
+            }
+            .about-heading, .about-para{
+                font-size: 14px;
+            }
+            footer #contact h2{
+                font-size: 14px
+            }
+            footer #contact ul li{
+                font-size: 14px;
+            }
+            .disclaimer{
+                font-size: 13px;
+            }
+            .disclaimer h2{
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar" id="home">
+            <h2 class="Main-Name-txt">Aqsa MS</h2>
+            <ul class="navbar-list">
+                <li><a href="#home" class="navbar-list-link HOME">Home</a></li>
+                <li><a href="#about" class="navbar-list-link">About us</a></li>
+                <li><a href="#contact" class="navbar-list-link">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section-1">
+            <div class="introduction">
+                <h3 class="intr-heading">Introducing <strong class="intr-highlight">Aqsa MS </strong>website</h3>
+                <p class="intr-desc">
+                    This is a preview of the website homepage. We will continuously improve the website, making major
+                    changes to its design, layout, and features over time. The
+                    website is currently under development and will take some time to be fully completed.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="about">
+            <h1>About Us </h1>
+            <h3>What is 'Aqsa MS'?</h3>
+            <h4 class="about-heading">Aqsa MS is a mobile shop </h4>
+            <p class="about-para">Our mobile shop buys,sells,repair phones and accessories </p>
+        </div>
+        <div id="contact">
+            <h1>Contact Us</h1>
+            <h2>Reach us via email or social media we will try to reply ASAP</h2>
+            <ul class="contact-list">
+                <li>Email : <a href="mailto:1234@gmail.com">1234@gmail.com</a></li>
+                <li>Whatsapp : <a href="whatsapp.myprofile.com">9613412020</a></li>
+                <li>Facebook : <a href="myfacebook/profile.com">@AqsaMS</a></li>
+                <li>Instagram : <a href="myinstagram/profile.com">@AqsaMS01</a></li>
+                <li>Twitter: <a href="myitwitter/profile.com">@AqsaMS02</a></li>
+            </ul>
+        </div>
+        <div class="disclaimer">
+            <h2> Note -Our website only displays products available in the mobile shop. We do not sell any products online without the permission of their rightful companies.</h2>
+            copyright &copy; all rights reserved 2025
+        </div>
+    </footer>
+    <script>
+        document.querySelector("a[href='#contact']").addEventListener("click", function () {
+            document.getElementById("contact").classList.add("highlight");
+            setTimeout(() => {
+                document.getElementById("contact").classList.remove("highlight");
+            }, 500);
+        });
+    </script>
+</body>
+
+</html>
